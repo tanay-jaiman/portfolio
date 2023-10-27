@@ -1,0 +1,125 @@
+body {
+    background-color: black;
+    color : white;
+    font-family: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans;
+}
+
+div.header {
+    background-color: black;
+    display: flex;
+    padding-left: 0;
+    flex-direction: row;
+    gap: 3%;
+    width: 100%;
+    height: max-content;
+    align-items: center;
+    flex-wrap: nowrap;
+    position: sticky;
+    top: 0px;
+    border-bottom: 1px solid orange;
+}
+
+div.header > a {
+    text-decoration: none;
+    flex-wrap: nowrap;
+    color:white;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+div.header > a:hover {
+    text-decoration: underline;
+}
+
+div.name {
+    display: grid;
+    place-items: center;
+    font-size: 50px;
+    color: orange;
+    font-family: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans;
+    justify-content: center;
+}
+
+.typed {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+
+    margin-bottom: 15px;
+
+    border-right: 2px solid;
+    animation: typing 1.5s steps(30, end) forwards, blinking 1s infinite;
+}
+
+@keyframes typing {
+    from {width : 0}
+    to {width : 100%}
+}
+
+@keyframes blinking {
+    0% {border-right-color: transparent}
+    50% {border-right-color: white}
+    100% {border-right-color: transparent}
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+button {
+    height: 50px;
+    width : 100px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+
+.glr-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.glr-button:active {
+    background-color: black;
+    color: white;
+}
+
+.name-footer {
+    padding-bottom: 15px;
+    font-size: 20px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 100%;
+}
+
+
+.section > .text {
+    font-size: 24px;
+    padding: 2px 50px 2px 50px;
+}
+
+.contact-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    gap: 5%;
+}
+
+.contact-me > .name-input {
+    display : flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
