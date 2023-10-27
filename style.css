@@ -2,7 +2,7 @@ body {
     background-color: black;
     color : white;
     min-width: device-width;
-    background-image: url('/Users/tanayjaiman/Desktop/WEB DEVELOPMENT/image4.jpg');
+    background-image: url('image4.jpg');
     font-family: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans;
 }
 
@@ -22,7 +22,7 @@ span::selection {
 }
 
 div.header {
-    background-image: url('/Users/tanayjaiman/Desktop/WEB DEVELOPMENT/image4.jpg');
+    background-image: url('image4.jpg');
     display: flex;
     padding-left: 20px;
     flex-direction: row;
