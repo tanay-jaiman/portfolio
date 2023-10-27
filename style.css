@@ -1,34 +1,52 @@
 body {
     background-color: black;
     color : white;
+    min-width: device-width;
+    background-image: url('/Users/tanayjaiman/Desktop/WEB DEVELOPMENT/image4.jpg');
     font-family: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans;
 }
 
+::selection {
+    background-color: white;
+    color: black;
+}
+
+p.typed::selection {
+    background-color: white;
+    color: red;
+}
+
+span::selection {
+    background-color: white;
+    color: green;
+}
+
 div.header {
-    background-color: black;
+    background-image: url('/Users/tanayjaiman/Desktop/WEB DEVELOPMENT/image4.jpg');
     display: flex;
-    padding-left: 0;
+    padding-left: 20px;
     flex-direction: row;
     gap: 3%;
-    width: 100%;
+    width: 98.5%;
     height: max-content;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     position: sticky;
     top: 0px;
+    min-width: fit-content;
     border-bottom: 1px solid orange;
 }
 
-div.header > a {
+a {
     text-decoration: none;
-    flex-wrap: nowrap;
     color:white;
     font-size: 30px;
     margin-top: 20px;
     margin-bottom: 20px;
+    padding-left: 20px;
 }
 
-div.header > a:hover {
+a:hover {
     text-decoration: underline;
 }
 
@@ -113,13 +131,37 @@ button {
     flex-direction: column;
     align-items: center;
     justify-items: center;
+    width: 100%;
+    min-width: fit-content;
     gap: 5%;
+
+    border: 1px solid white;
 }
 
 .contact-me > .name-input {
     display : flex;
     flex-direction: row;
-    justify-content: center;
-    flex-wrap: nowrap;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: fit-content;
+    gap: 1%;
+    width: 100%;
+
+    border: 1px solid red;
+
+    margin: 10px;
 }
 
+.first-name, .last-name {
+    display: flex;
+    flex-wrap: nowrap;
+    max-height: min-content;
+    width:100%;
+
+    border : 2px solid yellow;
+}
+
+
+ label {
+    min-width: max-content;
+}
