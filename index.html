@@ -13,7 +13,7 @@
 
 <body>
   <div class="header">
-        <a href="#about-me" target="_self">
+        <a href="#top" target="_self">
           /ABOUT_ME
         </a>
   
@@ -59,7 +59,8 @@
 
   <div class="section" id="about-me">
     <div class="text">
-      <h1>ABOUT ME:</h1>
+      <hr color="white" />
+      <h1 style="color: wheat;">ABOUT ME:</h1>
       <p>Hi! 👋🏻 My name is Tanay. I'm an International
         student from <span style="color:orange">India</span> 
         and a 
@@ -77,8 +78,10 @@
         (expected graduation May 2025).
       </p>
       <p>
-        I have been programming since I was 14. Back then, I 
-        used C using the book 
+        I have been programming since back when
+        I was a kid. I  started out 
+        using C with the 
+        help of references from the book 
         <span style="color:orange">"Let us C"</span>
         and worked my way from there to 
         <span style="color:orange">HTML</span>,
@@ -114,8 +117,8 @@
 
      <hr color="white">
 
-     <p style="font-size: 30px; color: yellow;">
-      Certificates I have gathered over the years:
+     <p style="font-size: 30px; color: wheat;">
+      Noteworthy Achievements:
      </p>
      <p>
       1. <span style="color:orange;">
@@ -130,7 +133,21 @@
       for acquiring 3.98 GPA 
      </p>
 
-     <p style="font-size: 30px; color: yellow">
+     <p>
+      3. <span style="color:orange">
+        Complete Python Course for Developers
+      </span>
+      - Completion Certificate 
+     </p>
+
+     <p>
+      4. <span style="color:orange">
+        Full Stack Web Development Course
+      </span>
+      - Completion Certificate
+     </p>
+
+     <p style="font-size: 30px; color: wheat">
       Relevant coursework I have completed at ASU:
      </p>
      <p> 1.
@@ -160,7 +177,7 @@
       </span>
       Data Structures and Algorithms (C/C++)
 
-      <p> 5. 
+      <p id="projects"> 5. 
         <span style="color: orange">
           CSE 360 :
         </span>
@@ -176,10 +193,11 @@
      </p>
      <hr color="white" />
     </div>
+  </div>
 
-    <div class="section" id="projects">
+    <div class="section">
       <div class="text">
-        <h1>PROJECTS:</h1>
+        <h1 style="color: wheat">PROJECTS:</h1>
         <p>Unfortunately, this part of the 
           website is yet to be built!
         </p>
@@ -189,48 +207,52 @@
 
     <div class="section" id="contact-me">
       <div class="text">
-        <h1>CONTACT ME:</h1>
+        <h1 style="color: wheat">CONTACT ME:</h1>
+
+        <p>
+          Contact me using the form provided
+          or connect with me through one or more
+          of the socials linked below. Feedback 
+          is greatly appreciated!
+        </p>
+
         <form action="mailto:tanayjaiman@outlook.com">
           
           <div class="contact-me">
 
             <div class="name-input">
-
               <div class="first-name">
-                <label for="fname">First Name: </label>
-              <input type="text" id="fname"
-                name="firstname" placeholder="First Name"/>
-              </div>
-  
-              <div class="last-name">
-                <label for="lname">Last Name: </label>
-              <input type="text" id="fname"
-                name="lastname" placeholder="Last Name"/>
-              </div>
-  
+                <input type="text" id="fname"
+                  name="firstname" placeholder="First Name"/>
+                </div>
+    
+                <div class="last-name">
+                <input type="text" id="lname"
+                  name="lastname" placeholder="Last Name"/>
+                </div>
             </div>
   
             <div class="subject">
-              <label for="subject">Subject: </label>
               <input type="text" id="subject"
                 name="subject" placeholder="Subject"/>
             </div>
   
             <div class="message">
-              <input type="text" id="message"
-                name="message" placeholder="Enter your message here."/>
+              <textarea type="text" id="message"
+                name="message" placeholder="Enter your message here."></textarea>
             </div>
-
-            <button type="submit" id="submit">SEND!</button>
-
           </div>
+
+          <button type="submit" id="submit">SEND</button>
 
         </form>
 
         <hr color="white" />
       </div>
     </div>
-  </div>
+
+    <p style="color: grey" align="center">© Tanay Jaiman - Hosted on github</p>
+    <p style="color: grey" align="center">https://tanay-jaiman.github.io/portfolio</p>
 
 </body>
 </html>

@@ -12,13 +12,13 @@ body {
 }
 
 p.typed::selection {
-    background-color: white;
+    background-color: gold;
     color: red;
 }
 
 span::selection {
-    background-color: white;
-    color: green;
+    background-color: gold;
+    color: red;
 }
 
 div.header {
@@ -116,7 +116,6 @@ button {
 .section {
     display: flex;
     flex-direction: column;
-    height: 400px;
     width: 100%;
 }
 
@@ -127,41 +126,99 @@ button {
 }
 
 .contact-me {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 1fr 1fr 3fr;
+    grid-template-columns: 1fr ;
+    gap: 10px;
+}
+
+.name-input {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.first-name > #fname {
+    background-color: black;
+    border: 2px solid orange;
+    width: 95%;
+    height: 50px;
+    border-radius: 25px;
+    padding-left: 20px;
     align-items: center;
-    justify-items: center;
-    width: 100%;
-    min-width: fit-content;
-    gap: 5%;
-
-    border: 1px solid white;
 }
 
-.contact-me > .name-input {
-    display : flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    max-width: fit-content;
-    gap: 1%;
-    width: 100%;
-
-    border: 1px solid red;
-
-    margin: 10px;
+.last-name > #lname {
+    background-color: black;
+    border: 2px solid orange;
+    width: 95%;
+    height: 50px;
+    border-radius : 25px;
+    padding-left: 20px;
+    align-items : center;
 }
 
-.first-name, .last-name {
-    display: flex;
-    flex-wrap: nowrap;
-    max-height: min-content;
-    width:100%;
+.subject > input {
+    width: 97.5%;
+    height: 50px;
 
-    border : 2px solid yellow;
+    border-radius : 25px;
+    padding-left: 20px;
+    align-items : center;
+
+    background-color: black;
+    border: 2px solid orange;
 }
 
+.message > textarea {
+    width: 97.5%;
+    height: 100%;
+    justify-items: start;
+    align-items: start;
 
- label {
-    min-width: max-content;
+    border-radius : 25px;
+    padding-left: 20px;
+    align-items : center;
+    padding-top: 15px;
+
+    background-color: black;
+    border: 2px solid orange;
+}
+
+button#submit {
+    margin-top: 25px;
+    align-self: end;
+    border-radius: 25px;
+
+    border: 2px solid orange;
+}
+
+input, textarea {
+    color: white;
+    font-size: 24px;
+    font-family: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans;
+}
+
+textarea:focus {
+    outline: 2px solid lightgreen;
+    border: none;
+}
+
+input:focus {
+    border: none;
+    outline: 2px solid lightgreen;
+}
+
+.first-name > #fname:focus {
+    border: none;
+}
+
+.last-name > #lname:focus { 
+    border: none;
+}
+
+button#submit:hover {
+    border: 2px solid black;
+    background-color: white;
+    color: black;
 }
