@@ -15,11 +15,11 @@ p.typed::selection {
     background-color: gold;
     color: red;
 }
-
+/* 
 span::selection {
     background-color: gold;
     color: red;
-}
+} */
 
 div.header {
     background-image: url('image4.jpg');
@@ -195,16 +195,21 @@ button#submit {
 
 input, textarea {
     color: white;
+    background-color: black;
     font-size: 24px;
     font-family: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans;
 }
 
 textarea:focus {
+    background-color: black;
+    color: white;
     outline: 2px solid lightgreen;
     border: none;
 }
 
+
 input:focus {
+    background-color: black;
     border: none;
     outline: 2px solid lightgreen;
 }
@@ -221,4 +226,21 @@ button#submit:hover {
     border: 2px solid black;
     background-color: white;
     color: black;
+}
+
+/* Autofill styles for Webkit browsers (e.g., Chrome, Safari) */
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px black inset !important;
+    -webkit-text-fill-color: white !important;
+    transition: background-color 5000s ease-in-out 0s !important;
+}
+
+/* Autofill styles for Mozilla Firefox */
+input:-moz-autofill,
+textarea:-moz-autofill,
+select:-moz-autofill {
+    background-color: black !important;
+    color: white !important;
 }
